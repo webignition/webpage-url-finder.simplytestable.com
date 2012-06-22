@@ -1,0 +1,44 @@
+{
+    "name": "webignition/webpage-url-finder.simplytestable.com",
+    "description": "Crawl a single URL, get ALL the links",
+    "keywords": ["http", "crawler", "links"],
+    "homepage": "https://github.com/webignition/webpage-url-finder.simplytestable.com",
+    "type": "library",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Jon Cram",
+            "email": "jon@webignition.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-http": "*",
+        "webignition/http-client": "*",
+        "webignition/html-document-link-url-finder": "*",
+        "webignition/web-document-link-url-finder": "*",
+        "webignition/url": "*"
+    },
+    "repositories": [
+        {
+            "type":"vcs",
+            "url": "https://github.com/webignition/http-client"
+        },
+        {
+            "type":"vcs",
+            "url": "https://github.com/webignition/html-document-link-url-finder"
+        },
+        {
+            "type":"vcs",
+            "url": "https://github.com/webignition/web-document-link-url-finder"
+        },        
+        {
+            "type":"vcs",
+            "url": "https://github.com/webignition/absolute-url-deriver"
+        },
+        {
+            "type":"vcs",
+            "url": "https://github.com/webignition/url"
+        }        
+    ]
+}
