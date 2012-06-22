@@ -99,8 +99,8 @@ class Configuration {
      * @param string $key
      * @return boolean
      */
-    public function has($key) {
-        return !is_null($this->configuration()->$key);
+    public function has($key) {        
+        return isset($this->configuration()->$key);
     }
     
 }
