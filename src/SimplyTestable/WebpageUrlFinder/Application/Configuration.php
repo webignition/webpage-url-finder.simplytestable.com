@@ -84,7 +84,11 @@ class Configuration {
      */
     private function configuration() {        
         if (is_null($this->configuration)) {
-            $this->configuration = json_decode(file_get_contents($this->configurationFilePath));
+            if (file_exists($this->configurationFilePath) && is_file($this->configurationFilePath)) {
+                $this->configuration = json_decode(file_get_contents($this->configurationFilePath));
+            } else {
+                $this->configuration = new \stdClass();
+            }
         }
         
         return $this->configuration;
