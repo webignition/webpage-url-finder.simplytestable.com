@@ -23,6 +23,10 @@ class Controller {
     private $linkFinder = null;
     
     
+    /**
+     *
+     * @param string $configurationFilePath 
+     */
     public function __construct($configurationFilePath) {
         $this->configuration = new \SimplyTestable\WebpageUrlFinder\Application\Configuration();
         $this->configuration->setConfigurationFilePath($configurationFilePath);        
@@ -40,34 +44,13 @@ class Controller {
         }
     }    
     
+    
+    /**
+     *
+     * @return array
+     */
     public function getOutput() {
-       return $this->linkFinder()->urls();
-      
-        
-/**
- $string = '{"a":"apple","b":"banana","c":"catnip"}';
- $pattern = array(',"', '{', '}');
- $replacement = array(",\n\t\"", "{\n\t", "\n}");
- echo str_replace($pattern, $replacement, $string); 
- */
-        
-//    $finder = new \webignition\WebDocumentLinkUrlFinder\WebDocumentLinkUrlFinder();
-//    $finder->setSourceUrl($sourceUrl);
-//    $finder->setRequestOptions(array(
-//        'proxyhost' => 'localhost',
-//        'proxyport' => 3128,
-//        'proxytype' => HTTP_PROXY_HTTP
-//    ));
-//
-//    $urls = $finder->urls();
-//   
-//    echo "Found ".count($urls)." urls\n";
-//    
-//    if (isset($_GET['verbose'])) {
-//        foreach ($urls as $url) {
-//            echo $url . "\n";
-//        }
-//    }        
+       return $this->linkFinder()->urls();      
     }
     
     
@@ -82,15 +65,6 @@ class Controller {
             $this->linkFinder->setRequestHeaders(array(
                 'User-Agent' => $this->configuration->getUserAgent()
             ));
-            
-//            $this->linkFinder->setRequestOptions(array(
-//                'proxyhost' => 'localhost',
-//                'proxyport' => 3128,
-//                'proxytype' => 0
-//            ));
-            
-//            var_dump($this->configuration->getProxyOptions());
-//            exit();
             
             if ($this->configuration->has('proxy')) {                
                 $this->linkFinder->setRequestOptions($this->configuration->getProxyOptions());            
