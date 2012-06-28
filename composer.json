@@ -1,5 +1,5 @@
 {
-    "name": "webignition/webpage-url-finder.simplytestable.com",
+    "name": "SimplyTestable/webpage-url-finder.simplytestable.com",
     "description": "Crawl a single URL, get ALL the links",
     "keywords": ["http", "crawler", "links"],
     "homepage": "https://github.com/webignition/webpage-url-finder.simplytestable.com",
