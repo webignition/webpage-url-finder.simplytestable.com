@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Simply Testable Web Page URL Finder" default="install">
+
+    <target name="install">
+        
+        <delete dir="vendor" />
+        <mkdir dir="vendor" />
+        <mkdir dir="vendor/webignition" />
+        <mkdir dir="vendor/webignition/absolute-url-deriver" />
+        <mkdir dir="vendor/webignition/html-document-link-url-finder" />
+        <mkdir dir="vendor/webignition/http-client" />
+        <mkdir dir="vendor/webignition/url" />
+        <mkdir dir="vendor/webignition/web-document-link-url-finder" />
+        
+        <gitclone 
+            repository="https://github.com/webignition/absolute-url-deriver.git"
+            targetPath="vendor/webignition/absolute-url-deriver" />
+            
+        <gitclone 
+            repository="https://github.com/webignition/html-document-link-url-finder.git"
+            targetPath="vendor/webignition/html-document-link-url-finder" />
+            
+        <gitclone 
+            repository="https://github.com/webignition/http-client.git"
+            targetPath="vendor/webignition/http-client" />
+            
+        <gitclone 
+            repository="https://github.com/webignition/url.git"
+            targetPath="vendor/webignition/url" />
+            
+        <gitclone 
+            repository="https://github.com/webignition/web-document-link-url-finder.git"
+            targetPath="vendor/webignition/web-document-link-url-finder" />
+            
+         <copy file="www/app.php" tofile="../public_html/index.php" overwrite="true"/>
+    </target>
+</project>
+
