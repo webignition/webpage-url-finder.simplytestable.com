@@ -54,7 +54,7 @@ class Controller {
             return false;
         }
         
-        return trim($this->url) == '';
+        return trim($this->url) != '';
     }
     
     
