@@ -6,7 +6,7 @@
 ini_set('display_errors', 'On');
 ini_set('include_path', ini_get('include_path').PATH_SEPARATOR.$_SERVER['DOCUMENT_ROOT'].'/../app');
 
-require_once($_SERVER['DOCUMENT_ROOT'].'/../lib/bootstrap.php');
+require_once('lib/bootstrap.php');
 
 $application = new \SimplyTestable\WebpageUrlFinder\Application\Controller($_SERVER['DOCUMENT_ROOT'].'/../config.json');
 $application->setUrl(isset($_GET['url']) ? $_GET['url'] : '');
