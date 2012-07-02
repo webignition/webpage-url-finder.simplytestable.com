@@ -1,12 +1,3 @@
 /nbproject
 /composer.lock
 /vendor
-/.bash*
-/.contactemail
-/.cpanel
-/.dns
-/.gemrc
-/.ssh
-/access-logs
-/www
-/dist
