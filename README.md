@@ -31,11 +31,11 @@ Or for http://stackoverflow.com/users/5343/jon-cram:
 
 You'll get back a JSON array containing all unique URLs found at the given URL.
 
-#### Example
-
-`GET http://webpage-url-finder.simplytestable.com/?url=http://example.com`
+#### Example Request And Response
 
 ```
+GET http://webpage-url-finder.simplytestable.com/?url=http://example.com
+
 [
     "http:\/\/example.com\/",
     "http:\/\/example.com\/domains\/",
@@ -55,3 +55,14 @@ You'll get back a JSON array containing all unique URLs found at the given URL.
     "mailto:iana@iana.org?subject=General+website+feedback"
 ]
 ```
+
+## Clickable Examples:
+
+ - [http://webpage-url-finder.simplytestable.com/?url=http://example.com][1]
+ - [http://webpage-url-finder.simplytestable.com/?url=http://stackoverflow.com/users/5343/jon-cram][2]
+ - [http://webpage-url-finder.simplytestable.com/?url=http://reddit.com][3]
+
+
+[1]: http://webpage-url-finder.simplytestable.com/?url=http://example.com
+[2]: http://webpage-url-finder.simplytestable.com/?url=http://stackoverflow.com/users/5343/jon-cram
+[3]: http://webpage-url-finder.simplytestable.com/?url=http://reddit.com
