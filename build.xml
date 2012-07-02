@@ -14,23 +14,23 @@
         <mkdir dir="vendor/webignition/web-document-link-url-finder" />
         
         <gitclone 
-            repository="git://github.com/webignition/absolute-url-deriver.git"
+            repository="https://github.com/webignition/absolute-url-deriver.git"
             targetPath="vendor/webignition/absolute-url-deriver" />
             
         <gitclone 
-            repository="git://github.com/webignition/html-document-link-url-finder.git"
+            repository="https://github.com/webignition/html-document-link-url-finder.git"
             targetPath="vendor/webignition/html-document-link-url-finder" />
             
         <gitclone 
-            repository="git://github.com/webignition/http-client.git"
+            repository="https://github.com/webignition/http-client.git"
             targetPath="vendor/webignition/http-client" />
             
         <gitclone 
-            repository="git://github.com/webignition/url.git"
+            repository="https://github.com/webignition/url.git"
             targetPath="vendor/webignition/url" />
             
         <gitclone 
-            repository="git://github.com/webignition/web-document-link-url-finder.git"
+            repository="https://github.com/webignition/web-document-link-url-finder.git"
             targetPath="vendor/webignition/web-document-link-url-finder" />
             
          <copy file="www/app.php" tofile="../public_html/index.php" overwrite="true"/>
