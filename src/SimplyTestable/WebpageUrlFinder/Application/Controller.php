@@ -42,7 +42,20 @@ class Controller {
             $this->url = $url;
             $this->linkFinder = null;
         }
-    }    
+    }
+    
+    
+    /**
+     *
+     * @return boolean 
+     */
+    public function hasUrl() {        
+        if (!is_string($this->url)) {
+            return false;
+        }
+        
+        return trim($this->url) == '';
+    }
     
     
     /**
