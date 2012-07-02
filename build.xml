@@ -34,7 +34,7 @@
             targetPath="vendor/webignition/web-document-link-url-finder" />
             
          <copy file="www/app.php" tofile="../public_html/index.php" overwrite="true"/>
-         <copy file="www/config.json" tofile="../config.json" overwrite="true"/>
+         <copy file="config.json" tofile="../config.json" overwrite="true"/>
     </target>
 </project>
 
