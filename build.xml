@@ -31,7 +31,9 @@
             
         <gitclone 
             repository="git://github.com/webignition/web-document-link-url-finder.git"
-            targetPath="vendor/webignition/web-document-link-url-finder" />        
+            targetPath="vendor/webignition/web-document-link-url-finder" />
+            
+         <copy file="www/app.php" tofile="../public_html/index.php" overwrite="true"/>
     </target>
 </project>
 
